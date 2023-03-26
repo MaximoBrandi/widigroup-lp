@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Widi group</title>
-  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
+    <title>WiDi group</title>
+  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+</head>
   <body
     x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
@@ -21,9 +23,9 @@
 >
   <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
     <div class="vd to/4 tc wf yf">
-      <a href="index.html">
+      <a href="/">
         <img class="om" src="images/WiDi.png" width="130px" alt="Logo Light" />
-        <img class="xc nm" src="images/WiDi.png" width="130px" alt="Logo Dark" />
+        <img class="xc nm" src="images/WiDiDark.png" width="130px" alt="Logo Dark" />
       </a>
 
       <!-- Hamburger Toggle BTN -->
@@ -49,9 +51,10 @@
     >
       <nav>
         <ul class="tc _o sf yo cg ep">
-          <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-          <li><a href="index.html#features" class="xl">Features</a></li>
-          <li><a href="index.html#support" class="xl">Support</a></li>
+          <li><a href="/" class="xl" :class="{ 'mk': page === 'home' }">Inicio</a></li>
+          <li><a href="#features" class="xl">WiDi</a></li>
+          <li><a href="#support" class="xl">Proyectos</a></li>
+          <li><a href="#contact" class="xl">Contacto</a></li>
         </ul>
       </nav>
 
@@ -67,9 +70,6 @@
             <img class="xc nm" src="images/icon-moon.svg" alt="Moon" />
           </label>
         </div>
-
-        <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a>
-        <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
       </div>
     </div>
   </div>
@@ -179,7 +179,7 @@
             <div class="animate_right jn/2">
               <h4 class="ek yj mk gb">Apoyamos el futuro</h4>
               <h2 class="fk vj zp pr kk wm qb">Juntos revolucionando la <span class="ek mk gb">Seguridad</span></h2>
-              <p class="uo">Mira como Widicams ayuda a la seguridad de diversos entornos y a alivianar diferentes puestos de trabajo.</p>
+              <p class="uo">Mira como WiDicams ayuda a la seguridad de diversos entornos y a alivianar diferentes puestos de trabajo.</p>
 
               <a href="https://www.youtube.com/watch?v=hyjQvW4PVkI" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">
@@ -225,7 +225,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
-                <img class="vd" src="images/worker-1.png" alt="Team" />
+                <img class="vd om" src="images/worker-1.png" alt="Team" />
+                <img class="vd xc nm" src="images/worker-1-dark.png" alt="Team" />
 
                 <div class="ef im nl il">
                   <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -264,7 +265,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
                 <div class="c i pg z-1">
-                  <img class="vd" src="images/worker-4.jpeg" alt="Team" />
+                  <img class="vd om" src="images/worker-4.jpeg" alt="Team" />
+                  <img class="vd xc nm" src="images/worker-4-dark.png" alt="Team" />
 
                   <div class="ef im nl il">
                     <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -304,7 +306,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
                 <div class="c i pg z-1">
-                  <img class="vd" src="images/worker-5.jpeg" alt="Team" />
+                  <img class="vd om" src="images/worker-5.jpeg" alt="Team" />
+                  <img class="vd xc nm" src="images/worker-5-dark.png" alt="Team" />
 
                   <div class="ef im nl il">
                     <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -343,7 +346,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
                 <div class="c i pg z-1">
-                  <img class="vd" src="images/worker-3.jpeg" alt="Team" />
+                  <img class="vd om" src="images/worker-3.jpeg" alt="Team" />
+                  <img class="vd xc nm" src="images/worker-3-dark.png" alt="Team" />
 
                   <div class="ef im nl il">
                     <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -378,7 +382,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
-                <img class="vd" src="images/worker-2.png" alt="Team" />
+                <img class="vd om" src="images/worker-2.png" alt="Team" />
+                <img class="vd xc nm" src="images/worker-2-dark.png" alt="Team" />
 
                 <div class="ef im nl il">
                   <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -484,7 +489,7 @@
       <section class="pg pj vp mr oj wp nr">
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Nuestras soluciones al mundo entero.`, sectionTitleText: `Todos estos son nuestros proyectos actuales y finalizados, abiertos para que todos puedan darle utilidad.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -510,7 +515,7 @@
               :class="{ 'gh lk' : filterTab === 1 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              All
+              Todos
             </button>
             <button
               data-filter=".branding"
@@ -518,7 +523,7 @@
               :class="{ 'gh lk' : filterTab === 2 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Branding Strategy
+              Aplicaciones web
             </button>
             <button
               data-filter=".digital"
@@ -526,7 +531,7 @@
               :class="{ 'gh lk' : filterTab === 3 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Digital Experiences
+              Aplicaciones nativas
             </button>
             <button
               data-filter=".ecommerce"
@@ -534,7 +539,7 @@
               :class="{ 'gh lk' : filterTab === 4 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Ecommerce
+              Sistemas
             </button>
           </div>
 
@@ -549,11 +554,11 @@
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
-                  <h4 class="ek tj kk hc">Photo Retouching</h4>
-                  <p>Branded Ecommerce</p>
+                  <h4 class="ek tj kk hc">Larn</h4>
+                  <p>Educacion y conocimiento offline</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="#"
+                    href="https://larn.ar" target="_blank"
                   >
                     <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
@@ -571,11 +576,11 @@
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
-                  <h4 class="ek tj kk hc">Photo Retouching</h4>
-                  <p>Branded Ecommerce</p>
+                  <h4 class="ek tj kk hc">Praendi Template</h4>
+                  <p>Sistema de blog web3</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="#"
+                    href="https://praendi.ar/template"
                   >
                     <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
@@ -593,11 +598,11 @@
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
-                  <h4 class="ek tj kk hc">Photo Retouching</h4>
-                  <p>Branded Ecommerce</p>
+                  <h4 class="ek tj kk hc">WiDicams</h4>
+                  <p>Reconocimiento facial con foco en la privacidad</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="#"
+                    href="https://widicams.widi.ar"
                   >
                     <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
@@ -615,11 +620,11 @@
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
-                  <h4 class="ek tj kk hc">Photo Retouching</h4>
-                  <p>Branded Ecommerce</p>
+                  <h4 class="ek tj kk hc">Jildam</h4>
+                  <p>Sistema de seguridad informatica</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="#"
+                    href="https://jildam.curseofacademy.com.ar"
                   >
                     <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
@@ -633,11 +638,11 @@
       </section>
       <!-- ===== Projects End ===== -->
 
-      <!-- ===== Testimonials Start ===== -->
+      {{-- <!-- ===== Testimonials Start ===== -->
       <section class="hj rp hr">
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Client’s Testimonials`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Experiencias`, sectionTitleText: `Experiencias y menciones que tuvimos para destacar, sobre la utilizacion y aplicacion de nuestras soluciones.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -711,7 +716,7 @@
           </div>
         </div>
       </section>
-      <!-- ===== Testimonials End ===== -->
+      <!-- ===== Testimonials End ===== --> --}}
 
       <!-- ===== Counter Start ===== -->
       <section class="i pg qh rm ji hp">
@@ -723,193 +728,25 @@
         <div class="bb ze i va ki xn br">
           <div class="tc uf sn tn xf un gg">
             <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">785</h2>
-              <p class="ek bk aq">Global Brands</p>
+              <h2 class="gk vj zp or kk wm hc">+7</h2>
+              <p class="ek bk aq">Proyectos</p>
             </div>
             <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">533</h2>
-              <p class="ek bk aq">Happy Clients</p>
+              <h2 class="gk vj zp or kk wm hc">+200</h2>
+              <p class="ek bk aq">Consumidores</p>
             </div>
             <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">865</h2>
-              <p class="ek bk aq">Winning Award</p>
+              <h2 class="gk vj zp or kk wm hc">∞</h2>
+              <p class="ek bk aq">Clientes potenciales</p>
             </div>
             <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">346</h2>
-              <p class="ek bk aq">Happy Clients</p>
+              <h2 class="gk vj zp or kk wm hc">195</h2>
+              <p class="ek bk aq">Paises objetivo</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===== Counter End ===== -->
 
-      <!-- ===== Clients Start ===== -->
-      <section class="pj vp mr">
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
-          <div class="wc rf qn zf cp kq xf wf">
-            <a href="#" class="rc animate_top">
-              <img class="th wl ml il zl om" src="images/brand-light-01.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-02.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-02.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-03.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-03.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-04.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-04.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-05.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-05.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-06.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-06.svg" alt="Clients" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Clients End ===== -->
-
-      <!-- ===== Blog Start ===== -->
-      <section class="ji gp uq">
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ye ki xn vq jb jo">
-          <div class="wc qf pn xo zf iq">
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-01.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Free advertising for your online business</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-02.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">9 simple ways to improve your design skills</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-03.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Blog End ===== -->
 
       <!-- ===== Contact Start ===== -->
       <section id="support" class="i pg fh rm ji gp uq">
@@ -922,7 +759,7 @@
 
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Let’s Stay Connected`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Contactemos`, sectionTitleText: `WiDi Group estaria encantada de contactar contigo para descubrir la mejor forma de ayudarte en el sector de soluciones tecnologicas.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -945,26 +782,26 @@
               <img src="images/shape-06.svg" alt="Shape" class="h la ma ne kf" />
 
               <div class="fb">
-                <h4 class="wj kk wm cc">Email Address</h4>
-                <p><a href="#">support@startup.com</a></p>
+                <h4 class="wj kk wm cc">Informacion</h4>
+                <p><a href="#">contact@widi.ar</a></p>
               </div>
               <div class="fb">
-                <h4 class="wj kk wm cc">Office Location</h4>
-                <p>76/A, Green valle, Califonia USA.</p>
+                <h4 class="wj kk wm cc">Soporte</h4>
+                <p>support@widi.ar</p>
               </div>
               <div class="fb">
-                <h4 class="wj kk wm cc">Phone Number</h4>
-                <p><a href="#">+009 8754 3433 223</a></p>
+                <h4 class="wj kk wm cc">Numero telefonico</h4>
+                <p><a href="#">+54 9 11 3433-5223</a></p>
               </div>
               <div class="fb">
-                <h4 class="wj kk wm cc">Skype Email</h4>
-                <p><a href="#">example@yourmail.com</a></p>
+                <h4 class="wj kk wm cc">‎ </h4>
+                <p><a href="#">‎ </a></p>
               </div>
 
               <span class="rc nd rh tm lc fb"></span>
 
               <div>
-                <h4 class="wj kk wm qb">Social Media</h4>
+                <h4 class="wj kk wm qb">Redes sociales</h4>
                 <ul class="tc wf fg">
                   <li>
                     <a href="#" class="c tc wf xf ie ld rg ml il tl">
@@ -988,21 +825,8 @@
                   </li>
                   <li>
                     <a href="#" class="c tc wf xf ie ld rg ml il tl">
-                      <svg class="th lm ml il" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.36198 2.58327C4.36174 3.0695 4.16835 3.53572 3.82436 3.87937C3.48037 4.22301 3.01396 4.41593 2.52773 4.41569C2.0415 4.41545 1.57528 4.22206 1.23164 3.87807C0.887991 3.53408 0.69507 3.06767 0.695313 2.58144C0.695556 2.09521 0.888943 1.62899 1.23293 1.28535C1.57692 0.941701 2.04333 0.748781 2.52956 0.749024C3.01579 0.749267 3.48201 0.942654 3.82566 1.28664C4.1693 1.63063 4.36222 2.09704 4.36198 2.58327ZM4.41698 5.77327H0.750313V17.2499H4.41698V5.77327ZM10.2103 5.77327H6.56198V17.2499H10.1736V11.2274C10.1736 7.87244 14.5461 7.56077 14.5461 11.2274V17.2499H18.167V9.98077C18.167 4.32494 11.6953 4.53577 10.1736 7.31327L10.2103 5.77327Z"
-                          fill=""
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="c tc wf xf ie ld rg ml il tl">
-                      <svg class="th lm ml il" width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.82308 0.904297C7.40883 0.904297 7.95058 0.95013 8.44558 1.0858C8.89476 1.16834 9.32351 1.33772 9.70783 1.58446C10.069 1.81088 10.3394 2.12896 10.5191 2.53688C10.6997 2.9448 10.7895 3.44438 10.7895 3.98796C10.7895 4.62321 10.6547 5.1668 10.3394 5.57471C10.069 5.98355 9.61799 6.34563 9.07716 6.61788C9.84349 6.84521 10.4292 7.25313 10.7895 7.79672C11.1507 8.34122 11.3762 9.02138 11.3762 9.7923C11.3762 10.4275 11.2405 10.9711 11.015 11.4249C10.7895 11.8786 10.4292 12.2865 10.0232 12.5588C9.58205 12.8506 9.09443 13.0651 8.58124 13.1931C8.04041 13.3297 7.49958 13.4205 6.95874 13.4205H0.916992V0.904297H6.82308ZM6.46191 5.98263C6.95783 5.98263 7.36391 5.84696 7.67924 5.62055C7.99458 5.39413 8.13024 4.9853 8.13024 4.48663C8.13024 4.21438 8.08441 3.94213 7.99458 3.76155C7.90474 3.58005 7.76908 3.44346 7.58941 3.3078C7.40883 3.21705 7.22824 3.1263 7.00274 3.08138C6.77724 3.03555 6.55266 3.03555 6.28133 3.03555H3.66699V5.98355H6.46283L6.46191 5.98263ZM6.59758 11.3341C6.86799 11.3341 7.13841 11.2883 7.36391 11.2434C7.59159 11.2001 7.80692 11.1071 7.99458 10.9711C8.17826 10.8384 8.33193 10.6685 8.44558 10.4725C8.53541 10.246 8.62616 9.9738 8.62616 9.65663C8.62616 9.02138 8.44558 8.56763 8.08533 8.25046C7.72416 7.97822 7.22824 7.84255 6.64249 7.84255H3.66699V11.335H6.59758V11.3341ZM15.2986 11.2883C15.6588 11.6513 16.1997 11.8328 16.9211 11.8328C17.417 11.8328 17.868 11.6971 18.2282 11.4707C18.5894 11.1985 18.8149 10.9262 18.9047 10.654H21.1139C20.7527 11.742 20.2119 12.513 19.4914 13.0116C18.7691 13.4654 17.9129 13.7376 16.8762 13.7376C16.2128 13.7396 15.5551 13.6165 14.9374 13.3746C14.3816 13.1661 13.886 12.8235 13.4946 12.3773C13.0759 11.9598 12.7665 11.4457 12.5935 10.8804C12.368 10.291 12.2772 9.65663 12.2772 8.93063C12.2772 8.25047 12.368 7.61613 12.5935 7.0258C12.8103 6.45755 13.1311 5.93468 13.5395 5.48396C13.9456 5.07605 14.4415 4.71396 14.9823 4.48663C15.5843 4.24469 16.2274 4.12143 16.8762 4.12363C17.6425 4.12363 18.319 4.26021 18.9047 4.57738C19.4914 4.89455 19.9415 5.25755 20.3027 5.80205C20.6711 6.32503 20.9456 6.90819 21.1139 7.52538C21.2037 8.15972 21.2487 8.79497 21.2037 9.52005H14.667C14.667 10.246 14.9374 10.9262 15.2986 11.2892V11.2883ZM18.1384 6.52713C17.8231 6.20996 17.3272 6.02846 16.7405 6.02846C16.3353 6.02846 16.0191 6.11922 15.7487 6.25488C15.4782 6.39147 15.2986 6.57297 15.118 6.75447C14.952 6.92978 14.8422 7.15067 14.8027 7.3888C14.7568 7.61613 14.7119 7.79672 14.7119 7.97822H18.7691C18.6792 7.29805 18.4537 6.84522 18.1384 6.52713ZM14.1711 1.76596H19.2201V2.99063H14.172V1.76596H14.1711Z"
-                          fill=""
-                        />
+                      <svg class="th lm ml il" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                       </svg>
                     </a>
                   </li>
@@ -1014,65 +838,69 @@
               <form action="https://formbold.com/s/unique_form_id" method="POST">
                 <div class="tc sf yo ap zf ep qb">
                   <div class="vd to/2">
-                    <label class="rc ac" for="fullname">Full name</label>
+                    <label class="rc ac" for="fullname">Nombre completo*</label>
                     <input
                       type="text"
                       name="fullname"
                       id="fullname"
                       placeholder="Devid Wonder"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
+                      required="required"
                     />
                   </div>
 
                   <div class="vd to/2">
-                    <label class="rc ac" for="email">Email address</label>
+                    <label class="rc ac" for="email">Direccion email*</label>
                     <input
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="example@gmail.com"
+                      placeholder="example@domain.com"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
+                      required="required"
                     />
                   </div>
                 </div>
 
                 <div class="tc sf yo ap zf ep qb">
                   <div class="vd to/2">
-                    <label class="rc ac" for="phone">Phone number</label>
+                    <label class="rc ac" for="phone">Telefono</label>
                     <input
                       type="text"
                       name="phone"
                       id="phone"
-                      placeholder="+009 3342 3432"
+                      placeholder="+00 000 3342 3432"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                     />
                   </div>
 
                   <div class="vd to/2">
-                    <label class="rc ac" for="subject">Subject</label>
+                    <label class="rc ac" for="subject">Asunto*</label>
                     <input
                       type="text"
                       for="subject"
                       id="subject"
-                      placeholder="Type your subject"
+                      placeholder="Escribe un asunto"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
+                      required="required"
                     />
                   </div>
                 </div>
 
                 <div class="fb">
-                  <label class="rc ac" for="message">Message</label>
+                  <label class="rc ac" for="message">Mensaje*</label>
                   <textarea
-                    placeholder="Message"
+                    placeholder="Mensaje"
                     rows="4"
                     name="message"
                     id="message"
                     class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 ci"
+                    required="required"
                   ></textarea>
                 </div>
 
                 <div class="tc xf">
-                  <button class="vc rg lk gh ml il hi gi _l">Send Message</button>
+                  <button class="vc rg lk gh ml il hi gi _l">Enviar mensaje</button>
                 </div>
               </form>
             </div>
@@ -1090,15 +918,15 @@
     <div class="tc uf sn tn un gg">
       <div class="animate_left to/2">
         <h2 class="fk vj zp pr lk ac">
-            Join with 5000+ Startups Growing with Base.
+            Unete a la revolucion tecnologia con nuestro apoyo
         </h2>
         <p class="lk">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus.
+            Cada año decenas de empresas actualizan sus sistemas al mundo tecnologico, pero no siempre de la forma mas segura y eficiente. Ahorra problemas futuros y disfruta de gigantes beneficios sin los problemas que acarrea lo nuevo
         </p>
       </div>
       <div class="animate_right bf">
         <a href="#" class="vc ek kk hh rg ol il cm gi hi">
-            Get Started Now
+            Contacta a WiDi
         </a>
       </div>
     </div>
@@ -1114,12 +942,12 @@
     <div class="ji gp">
       <div class="tc uf ap gg fp">
         <div class="animate_top zd/2 to/4">
-          <a href="index.html">
+          <a href="/">
             <img src="images/WiDi.png" width="130px" alt="Logo" class="om" />
-            <img src="images/WiDi.png" width="130px" alt="Logo" class="xc nm" />
+            <img src="images/WiDiDark.png" width="130px" alt="Logo" class="xc nm" />
           </a>
 
-          <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="lc fb">Revolucion tecnologica de Latam al mundo.</p>
 
           <ul class="tc wf cg">
             <li>
@@ -1155,32 +983,13 @@
             </li>
             <li>
               <a href="#">
-                <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_48_1505)">
-                    <path
-                      d="M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46944 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.1502 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15124 3.95899 3.5265 3.5841C3.90176 3.20922 4.41057 2.99876 4.941 2.99902C5.47144 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z"
-                      fill=""
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_48_1505">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="vh ul cl il" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_48_1508)">
-                    <path
-                      d="M7.443 5.3501C8.082 5.3501 8.673 5.4001 9.213 5.5481C9.70301 5.63814 10.1708 5.82293 10.59 6.0921C10.984 6.3391 11.279 6.6861 11.475 7.1311C11.672 7.5761 11.77 8.1211 11.77 8.7141C11.77 9.4071 11.623 10.0001 11.279 10.4451C10.984 10.8911 10.492 11.2861 9.902 11.5831C10.738 11.8311 11.377 12.2761 11.77 12.8691C12.164 13.4631 12.41 14.2051 12.41 15.0461C12.41 15.7391 12.262 16.3321 12.016 16.8271C11.77 17.3221 11.377 17.7671 10.934 18.0641C10.4528 18.3825 9.92084 18.6165 9.361 18.7561C8.771 18.9051 8.181 19.0041 7.591 19.0041H1V5.3501H7.443ZM7.049 10.8901C7.59 10.8901 8.033 10.7421 8.377 10.4951C8.721 10.2481 8.869 9.8021 8.869 9.2581C8.869 8.9611 8.819 8.6641 8.721 8.4671C8.623 8.2691 8.475 8.1201 8.279 7.9721C8.082 7.8731 7.885 7.7741 7.639 7.7251C7.393 7.6751 7.148 7.6751 6.852 7.6751H4V10.8911H7.05L7.049 10.8901ZM7.197 16.7281C7.492 16.7281 7.787 16.6781 8.033 16.6291C8.28138 16.5819 8.51628 16.4805 8.721 16.3321C8.92139 16.1873 9.08903 16.002 9.213 15.7881C9.311 15.5411 9.41 15.2441 9.41 14.8981C9.41 14.2051 9.213 13.7101 8.82 13.3641C8.426 13.0671 7.885 12.9191 7.246 12.9191H4V16.7291H7.197V16.7281ZM16.689 16.6781C17.082 17.0741 17.672 17.2721 18.459 17.2721C19 17.2721 19.492 17.1241 19.885 16.8771C20.279 16.5801 20.525 16.2831 20.623 15.9861H23.033C22.639 17.1731 22.049 18.0141 21.263 18.5581C20.475 19.0531 19.541 19.3501 18.41 19.3501C17.6864 19.3523 16.9688 19.2179 16.295 18.9541C15.6887 18.7266 15.148 18.3529 14.721 17.8661C14.2643 17.4107 13.9267 16.8498 13.738 16.2331C13.492 15.5901 13.393 14.8981 13.393 14.1061C13.393 13.3641 13.492 12.6721 13.738 12.0281C13.9745 11.4082 14.3245 10.8378 14.77 10.3461C15.213 9.9011 15.754 9.5061 16.344 9.2581C17.0007 8.99416 17.7022 8.85969 18.41 8.8621C19.246 8.8621 19.984 9.0111 20.623 9.3571C21.263 9.7031 21.754 10.0991 22.148 10.6931C22.5499 11.2636 22.8494 11.8998 23.033 12.5731C23.131 13.2651 23.18 13.9581 23.131 14.7491H16C16 15.5411 16.295 16.2831 16.689 16.6791V16.6781ZM19.787 11.4841C19.443 11.1381 18.902 10.9401 18.262 10.9401C17.82 10.9401 17.475 11.0391 17.18 11.1871C16.885 11.3361 16.689 11.5341 16.492 11.7321C16.311 11.9234 16.1912 12.1643 16.148 12.4241C16.098 12.6721 16.049 12.8691 16.049 13.0671H20.475C20.377 12.3251 20.131 11.8311 19.787 11.4841V11.4841ZM15.459 6.2901H20.967V7.6261H15.46V6.2901H15.459Z"
-                    />
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                   </g>
                   <defs>
                     <clipPath id="clip0_48_1508">
-                      <rect width="24" height="24" fill="white" />
+                      <rect width="16" height="16" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>
@@ -1191,52 +1000,52 @@
 
         <div class="vd ro tc sf rn un gg vn">
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Quick Links</h4>
+            <h4 class="kk wm tj ec">Nosotros</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Home</a></li>
-              <li><a href="#" class="sc xl vb">Product</a></li>
+              <li><a href="#" class="sc xl vb">Equipo</a></li>
+              <li><a href="#" class="sc xl vb">Proyectos</a></li>
               <li>
                 <a href="#" class="sc xl vb">
-                  Careers
-                  <span class="sc ek uj lk nh rg zi _i nc">Hiring</span>
+                  Trabajo
+                  <span class="sc ek uj lk nh rg zi _i nc">Contratando!</span>
                 </a>
               </li>
-              <li><a href="#" class="sc xl vb">Pricing</a></li>
+              <li><a href="#" class="sc xl vb">Contacto</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Services</h4>
+            <h4 class="kk wm tj ec">Servicios</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Web Development</a></li>
-              <li><a href="#" class="sc xl vb">Graphics Design</a></li>
-              <li><a href="#" class="sc xl vb">Digital Marketing</a></li>
-              <li><a href="#" class="sc xl vb">Ui/Ux Design</a></li>
+              <li><a href="#" class="sc xl vb">Desarrollo web apps</a></li>
+              <li><a href="#" class="sc xl vb">Diseño grafico</a></li>
+              <li><a href="#" class="sc xl vb">Sistemas informaticos</a></li>
+              <li><a href="#" class="sc xl vb">Experiencia de usuario</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Support</h4>
+            <h4 class="kk wm tj ec">Soporte</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Company</a></li>
-              <li><a href="#" class="sc xl vb">Press media</a></li>
-              <li><a href="#" class="sc xl vb">Our Blog</a></li>
-              <li><a href="#" class="sc xl vb">Contact Us</a></li>
+              <li><a href="#" class="sc xl vb">Grupo</a></li>
+              <li><a href="#" class="sc xl vb">Media y comunicacion</a></li>
+              <li><a href="#" class="sc xl vb">Blog</a></li>
+              <li><a href="#" class="sc xl vb">Soporte tecnico</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
             <h4 class="kk wm tj ec">Newsletter</h4>
-            <p class="ac qe">Subscribe to receive future updates</p>
+            <p class="ac qe">Suscribete a nuestro boletin de noticias</p>
 
             <form action="https://formbold.com/s/unique_form_id" method="POST">
               <div class="i">
                 <input
                   type="text"
-                  placeholder="Email address"
+                  placeholder="Direccion e-mail"
                   class="vd sm _g ch pm vk xm rg gm dm dn gi mi"
                 />
 
@@ -1267,14 +1076,14 @@
     <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
       <div class="animate_top">
         <ul class="tc wf gg">
-          <li><a href="#" class="xl">English</a></li>
-          <li><a href="#" class="xl">Privacy Policy</a></li>
-          <li><a href="#" class="xl">Support</a></li>
+          <li><a href="#" class="xl"><span class='fi fi-es'></span></a></li>
+          <li><a href="#" class="xl">Politica de privacidad</a></li>
+          <li><a href="#" class="xl">Soporte</a></li>
         </ul>
       </div>
 
       <div class="animate_top">
-        <p>&copy; 2025 Base. All rights reserved</p>
+        <p>{{date("Y")}} WiDi Group</p>
       </div>
     </div>
     <!-- Footer Bottom -->
