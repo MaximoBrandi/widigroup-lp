@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Facade;
 
 return [
 
+    'locales' => ['en', 'es', 'it'],
+    'locales_text_display' => ['en' => 'English', 'es' => 'Español', 'it' => 'Italiano'],
+    'fallback_locale' => 'en',
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -15,7 +19,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Widigroup-lp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +99,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -181,6 +185,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Panfu\Laravel\HCaptcha\HCaptchaServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -210,6 +215,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'HCaptcha' => Panfu\Laravel\HCaptcha\Facades\HCaptcha::class,
     ])->toArray(),
 
 ];

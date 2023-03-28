@@ -1407,7 +1407,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -1421,14 +1421,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -1441,7 +1441,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -1453,12 +1453,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -1469,13 +1469,129 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/js/index.js");
-/******/ 	
+/******/
 /******/ })()
 ;
+
+async function newsletterfunct(token) {
+        email = document.getElementById('newsletter').value
+
+    response = await fetch('/newsletter', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        'email': email,
+        '_token': token,
+        'locale': document.documentElement.lang,
+    })
+    });
+
+    const data = await response.text();
+
+    if (data == 'ok') {
+        switch (document.documentElement.lang) {
+            case 'es':
+                new AWN().success('Newsletter registrada correctamente', {labels: {success: 'Éxito'}})
+                break;
+            case 'en':
+                new AWN().success('Newsletter registered correctly')
+                break;
+            case 'it':
+                new AWN().success('Notiziario registrata correttamente', {labels: {success: 'Successo'}})
+                break;
+
+            default:
+                new AWN().success('Newsletter registered correctly')
+                break;
+        }
+    }else if(data == 'deleted'){
+        switch (document.documentElement.lang) {
+            case 'es':
+                new AWN().success('Newsletter borrado correctamente', {labels: {success: 'Éxito'}})
+                break;
+            case 'en':
+                new AWN().success('Newsletter deleted correctly')
+                break;
+            case 'it':
+                new AWN().success('Notiziario cancellato correttamente', {labels: {success: 'Successo'}})
+                break;
+
+            default:
+                new AWN().success('Newsletter deleted correctly')
+                break;
+        }
+    }else{
+        cas = JSON.parse(data)
+
+        switch (document.documentElement.lang) {
+            case 'es':
+                for (const val of Object.values(cas)) {
+                    new AWN().warning(val[0], {labels: {warning: 'Error'}})
+                }
+                break;
+            case 'en':
+                for (const val of Object.values(cas)) {
+                    new AWN().warning(val[0])
+                }
+                break;
+            case 'it':
+                for (const val of Object.values(cas)) {
+                    new AWN().warning(val[0], {labels: {warning: 'Avvertimento'}})
+                }
+                break;
+
+            default:
+                for (const val of Object.values(cas)) {
+                    new AWN().warning(val[0])
+                }
+                break;
+        }
+    }
+}
+
+async function contactpush(data) {
+    if (data == 'success') {
+        switch (document.documentElement.lang) {
+            case 'es':
+                new AWN().success('Consulta registrada correctamente', {labels: {success: 'Éxito'}})
+                break;
+            case 'en':
+                new AWN().success('Inquiry registered correctly')
+                break;
+            case 'it':
+                new AWN().success('Query registrata correttamente', {labels: {success: 'Successo'}})
+                break;
+
+            default:
+                new AWN().success('Inquiry registered correctly')
+                break;
+        }
+    }else{
+        switch (document.documentElement.lang) {
+            case 'es':
+                new AWN().warning(data, {labels: {warning: 'Error'}})
+                break;
+            case 'en':
+                new AWN().warning(data)
+                break;
+            case 'it':
+                new AWN().warning(data, {labels: {warning: 'Avvertimento'}})
+                break;
+
+            default:
+                new AWN().warning(data)
+                break;
+        }
+    }
+}
+
+

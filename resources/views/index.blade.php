@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ __('lang') }}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WiDi group</title>
-  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet">
+    <meta name="keywords" content="escuela, técnica, ciudad, buenos, aires, orientación, automotores, computación, educacion, balvanera, informatica">
+    <meta name="robots" content="follow">
+    <meta name="title" content="WiDi Group">
+    <meta name="copyright" content="WiDi Group">
+    <meta name="author" content="WiDi Group">
+    <meta name="twitter:description" content="WiDi Group it's a technology consulting and open source developing group, where you can find a IT solution for every step of your production chain">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="images/WiDi.png">
+    <meta name="description" content="WiDi Group it's a technology consulting and open source developing group, where you can find a IT solution for every step of your production chain">
+    <meta property="og:type" content="website">
+    <meta name="twitter:image" content="images/WiDi.png">
+    <meta name="twitter:title" content="WiDi Group">
+    <link rel="icon" type="image/png" sizes="371x371" href="images/WiDiLogo.png">
+
+    <link rel="stylesheet" href="notification.css"></link>
+    <script src="notification.var.js"></script>
+
+  <link rel="icon" href="favicon.ico">
+  <link href="style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
 </head>
   <body
     x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
@@ -51,10 +72,10 @@
     >
       <nav>
         <ul class="tc _o sf yo cg ep">
-          <li><a href="/" class="xl" :class="{ 'mk': page === 'home' }">Inicio</a></li>
-          <li><a href="#features" class="xl">WiDi</a></li>
-          <li><a href="#support" class="xl">Proyectos</a></li>
-          <li><a href="#contact" class="xl">Contacto</a></li>
+          <li><a href="/" class="xl" :class="{ 'mk': page === 'home' }">{{ __('navigation')['Inicio'] }}</a></li>
+          <li><a href="#widi" class="xl">WiDi</a></li>
+          <li><a href="#projects" class="xl">{{ __('navigation')['Proyectos'] }}</a></li>
+          <li><a href="#support" class="xl">{{ __('navigation')['Contacto'] }}</a></li>
         </ul>
       </nav>
 
@@ -93,21 +114,19 @@
         <div class="bb ze ki xn 2xl:ud-px-0">
           <div class="tc _o">
             <div class="animate_left jn/2">
-              <h1 class="fk vj zp or kk wm wb">Revolucion tecnologica de Latam al mundo</h1>
+              <h1 class="fk vj zp or kk wm wb">{{ __('titulo') }}</h1>
               <p class="fq">
-                Somos un grupo que se dedica a desarrollar soluciones de impacto para todas las industrias
-                que todavia tienen mucho espacio para modernizarse, hacemos lo posible para ayudar a las personas
-                y hacer que su experiencia de vida sea cada dia mejor.
+                {{ __('descripcion') }}
               </p>
 
               <div class="tc tf yo zf mb">
-                <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l">
-                    Descubrenos
+                <a href="#widi" class="ek jk lk gh gi hi rg ml il vc _d _l">
+                    {{ __('Descubrenos') }}
                 </a>
 
                 <span class="tc sf">
-                  <a href="#" class="inline-block ek xj kk wm"> Escribe a contact@widi.ar </a>
-                  <span class="inline-block">Para una experiencia mas cercana</span>
+                  <a href="#" class="inline-block ek xj kk wm"> {{ __('Escribe a') }} contact@widi.ar </a>
+                  <span class="inline-block">{{ __('Para una') }}</span>
                 </span>
               </div>
             </div>
@@ -126,8 +145,8 @@
                 <img src="images/icon-01.svg" alt="Icon" />
               </div>
               <div>
-                <h4 class="ek yj go kk wm xb">Soporte dinamico</h4>
-                <p>Ofrecemos diferentes formas de soporte para una mejor experiencia.</p>
+                <h4 class="ek yj go kk wm xb">{{ __('contacto')['dinamico'] }}</h4>
+                <p>{{ __('contacto')['soporte']  }}</p>
               </div>
             </div>
 
@@ -137,8 +156,8 @@
                 <img src="images/icon-02.svg" alt="Icon" />
               </div>
               <div>
-                <h4 class="ek yj go kk wm xb">Hazlo tu mismo</h4>
-                <p>Todos nuestros desarrollos son abiertos, puedes hacerlos tuyos.</p>
+                <h4 class="ek yj go kk wm xb">{{ __('experiencia')['descripcion'] }}</h4>
+                <p>{{ __('experiencia')['desarrollos_abiertos'] }}</p>
               </div>
             </div>
 
@@ -148,8 +167,8 @@
                 <img src="images/icon-03.svg" alt="Icon" />
               </div>
               <div>
-                <h4 class="ek yj go kk wm xb">Facilidad tecnica</h4>
-                <p>Nuestro enfoque en hacer trabajo intuitivo te beneficia.</p>
+                <h4 class="ek yj go kk wm xb">{{ __('facilidad')['tecnica'] }}</h4>
+                <p>{{ __('facilidad')['descripcion'] }}</p>
               </div>
             </div>
           </div>
@@ -177,16 +196,16 @@
 
             <!-- About Content -->
             <div class="animate_right jn/2">
-              <h4 class="ek yj mk gb">Apoyamos el futuro</h4>
-              <h2 class="fk vj zp pr kk wm qb">Juntos revolucionando la <span class="ek mk gb">Seguridad</span></h2>
-              <p class="uo">Mira como WiDicams ayuda a la seguridad de diversos entornos y a alivianar diferentes puestos de trabajo.</p>
+              <h4 class="ek yj mk gb">{{ __('apoyo')['descripcion'] }}</h4>
+              <h2 class="fk vj zp pr kk wm qb">{{ __('apoyo')['juntos'] }} <span class="ek mk gb">{{ __('apoyo')['seguridad'] }}</span></h2>
+              <p class="uo">{{ __('apoyo')['widi_cams'] }}</p>
 
               <a href="https://www.youtube.com/watch?v=hyjQvW4PVkI" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">
                   <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
                   <img src="images/icon-play.svg" alt="Play" />
                 </span>
-                <span class="kk">MIRA NUESTRO TRABAJO</span>
+                <span class="kk">{{ __('trabajo')['descripcion'] }}</span>
               </a>
             </div>
           </div>
@@ -205,7 +224,7 @@
 
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Conoce a nuestro equipo`, sectionTitleText: `Todos nosotros tenemos estamos motivados para dar al mundo las mas eficientes, amigables y versatiles soluciones para todos.`}"
+          x-data="{ sectionTitle: `{{ __('trabajo')['equipo']['titulo'] }}`, sectionTitleText: `{{ __('trabajo')['equipo']['descripcion'] }}`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
             <h2
@@ -419,10 +438,10 @@
       <!-- ===== Team End ===== -->
 
       <!-- ===== Services Start ===== -->
-      <section class="lj tp kr">
+      <section id="widi" class="lj tp kr">
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Siempre vamos a pensar en todos`, sectionTitleText: `Nuestras soluciones son de codigo abierto, por lo que no solo todos pueden ayudar, tambien todos los proyectos son de libre uso.`}"
+          x-data="{ sectionTitle: `{{ __('valores')['todos'] }}`, sectionTitleText: `{{ __('valores')['codigo_abierto'] }}`}"
                 >
                 <div class="animate_top bb ze rj ki xn vq">
             <h2
@@ -442,43 +461,43 @@
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-04.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Hecho para todos</h4>
-              <p>Nuestros proyectos pueden ser utilizados tanto por grandes organizaciones como por individuos.</p>
+              <h4 class="ek zj kk wm nb _b">{{ __('valores')['hecho_para_todos titulo'] }}</h4>
+              <p>{{ __('valores')['hecho_para_todos'] }}</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Confiabilidad</h4>
-              <p>Intentamos en todo momento que nuestras soluciones sean altamente confiables y correctamente funcionales.</p>
+              <h4 class="ek zj kk wm nb _b">{{ __('valores')['confiabilidad titulo'] }}</h4>
+              <p>{{ __('valores')['confiabilidad'] }}</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Basta comunidad</h4>
-              <p>Somos parte de diferentes comunidades de desarrollo, por lo que no estas solo a la hora de aprovecharnos.</p>
+              <h4 class="ek zj kk wm nb _b">{{ __('valores')['comunidad titulo'] }}</h4>
+              <p>{{ __('valores')['comunidad'] }}.</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-07.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Eficiente optimizacion</h4>
-              <p>Nos aseguramos de que nuestros aplicativos siempre funcionen en sistemas incluso de bajos recursos.</p>
+              <h4 class="ek zj kk wm nb _b">{{ __('valores')['eficiencia titulo'] }}</h4>
+              <p>{{ __('valores')['eficiencia'] }}</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Avanzada customizacion</h4>
-              <p>Todos pueden hacer propios cada proyecto, aplicandolos segun su habilidad a su ambito de la mejor forma.</p>
+              <h4 class="ek zj kk wm nb _b">{{ __('Avanzada customizacion') }}</h4>
+              <p>{{ __('Avanzada customizacion desc') }}</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Continuas mejoras</h4>
-              <p>Nunca dejamos proyectos, nos aseguramos de que su funcionamiento se cumpla y los mantenemos al dia.</p>
+              <h4 class="ek zj kk wm nb _b">{{ __('Continuas mejoras') }}</h4>
+              <p>{{ __('Continuas mejoras desc') }}</p>
             </div>
           </div>
         </div>
@@ -486,10 +505,10 @@
       <!-- ===== Services End ===== -->
 
       <!-- ===== Projects Start ===== -->
-      <section class="pg pj vp mr oj wp nr">
+      <section id="projects" class="pg pj vp mr oj wp nr">
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Nuestras soluciones al mundo entero.`, sectionTitleText: `Todos estos son nuestros proyectos actuales y finalizados, abiertos para que todos puedan darle utilidad.`}"
+          x-data="{ sectionTitle: `{{ __('Nuestras soluciones al mundo entero') }}`, sectionTitleText: `{{ __('Nuestras soluciones al mundo entero desc') }}`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -515,7 +534,7 @@
               :class="{ 'gh lk' : filterTab === 1 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Todos
+            {{ __('Todos') }}
             </button>
             <button
               data-filter=".branding"
@@ -523,7 +542,7 @@
               :class="{ 'gh lk' : filterTab === 2 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Aplicaciones web
+            {{ __('Aplicaciones web') }}
             </button>
             <button
               data-filter=".digital"
@@ -531,7 +550,7 @@
               :class="{ 'gh lk' : filterTab === 3 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Aplicaciones nativas
+            {{ __('Aplicaciones nativas') }}
             </button>
             <button
               data-filter=".ecommerce"
@@ -539,7 +558,7 @@
               :class="{ 'gh lk' : filterTab === 4 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Sistemas
+            {{ __('Sistemas') }}
             </button>
           </div>
 
@@ -555,7 +574,7 @@
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
                   <h4 class="ek tj kk hc">Larn</h4>
-                  <p>Educacion y conocimiento offline</p>
+                  <p>{{ __('Larn') }}</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                     href="https://larn.ar" target="_blank"
@@ -577,7 +596,7 @@
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
                   <h4 class="ek tj kk hc">Praendi Template</h4>
-                  <p>Sistema de blog web3</p>
+                  <p>{{ __('Praendi') }}</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                     href="https://praendi.ar/template"
@@ -599,7 +618,7 @@
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
                   <h4 class="ek tj kk hc">WiDicams</h4>
-                  <p>Reconocimiento facial con foco en la privacidad</p>
+                  <p>{{ __('WiDicams') }}</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                     href="https://widicams.widi.ar"
@@ -621,7 +640,7 @@
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
                   <h4 class="ek tj kk hc">Jildam</h4>
-                  <p>Sistema de seguridad informatica</p>
+                  <p>{{ __('Jildam') }}</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                     href="https://jildam.curseofacademy.com.ar"
@@ -729,24 +748,190 @@
           <div class="tc uf sn tn xf un gg">
             <div class="animate_top me/5 ln rj">
               <h2 class="gk vj zp or kk wm hc">+7</h2>
-              <p class="ek bk aq">Proyectos</p>
+              <p class="ek bk aq">{{ __('Proyectos') }}</p>
             </div>
             <div class="animate_top me/5 ln rj">
               <h2 class="gk vj zp or kk wm hc">+200</h2>
-              <p class="ek bk aq">Consumidores</p>
+              <p class="ek bk aq">{{ __('Consumidores') }}</p>
             </div>
             <div class="animate_top me/5 ln rj">
               <h2 class="gk vj zp or kk wm hc">∞</h2>
-              <p class="ek bk aq">Clientes potenciales</p>
+              <p class="ek bk aq">{{ __('Clientes potenciales') }}</p>
             </div>
             <div class="animate_top me/5 ln rj">
               <h2 class="gk vj zp or kk wm hc">195</h2>
-              <p class="ek bk aq">Paises objetivo</p>
+              <p class="ek bk aq">{{ __('Paises objetivo') }}</p>
             </div>
           </div>
         </div>
       </section>
+      <!-- ===== Counter End ===== -->
 
+      {{-- <!-- ===== Clients Start ===== -->
+      <section class="pj vp mr">
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+    <h2
+            x-text="sectionTitle"
+            class="fk vj pr kk wm on/5 gq/2 bb _b"
+    >
+    </h2>
+    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+</div>
+
+
+        </div>
+        <!-- Section Title End -->
+
+        <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
+          <div class="wc rf qn zf cp kq xf wf">
+            <a href="#" class="rc animate_top">
+              <img class="th wl ml il zl om" src="images/brand-light-01.svg" alt="Clients" />
+              <img class="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" />
+            </a>
+            <a href="#" class="rc animate_top">
+              <img class="tk ml il zl om" src="images/brand-light-02.svg" alt="Clients" />
+              <img class="xc sk ml il zl nm" src="images/brand-dark-02.svg" alt="Clients" />
+            </a>
+            <a href="#" class="rc animate_top">
+              <img class="tk ml il zl om" src="images/brand-light-03.svg" alt="Clients" />
+              <img class="xc sk ml il zl nm" src="images/brand-dark-03.svg" alt="Clients" />
+            </a>
+            <a href="#" class="rc animate_top">
+              <img class="tk ml il zl om" src="images/brand-light-04.svg" alt="Clients" />
+              <img class="xc sk ml il zl nm" src="images/brand-dark-04.svg" alt="Clients" />
+            </a>
+            <a href="#" class="rc animate_top">
+              <img class="tk ml il zl om" src="images/brand-light-05.svg" alt="Clients" />
+              <img class="xc sk ml il zl nm" src="images/brand-dark-05.svg" alt="Clients" />
+            </a>
+            <a href="#" class="rc animate_top">
+              <img class="tk ml il zl om" src="images/brand-light-06.svg" alt="Clients" />
+              <img class="xc sk ml il zl nm" src="images/brand-dark-06.svg" alt="Clients" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Clients End ===== --> --}}
+
+      {{-- <!-- ===== Blog Start ===== -->
+      <section class="ji gp uq">
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Ultimas actualizaciones y noticias`, sectionTitleText: `En nuestro blog vas a poder encotnrar las ultimas actualizaciones de nuestros proyectos al mismo tiempo que informacion de interes general sobre tecnologia.`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+    <h2
+            x-text="sectionTitle"
+            class="fk vj pr kk wm on/5 gq/2 bb _b"
+    >
+    </h2>
+    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+</div>
+
+
+        </div>
+        <!-- Section Title End -->
+
+        <div class="bb ye ki xn vq jb jo">
+          <div class="wc qf pn xo zf iq">
+            <!-- Blog Item -->
+            <div class="animate_top sg vk rm xm">
+              <div class="c rc i z-1 pg">
+                <img class="w-full" src="images/blog-01.png" alt="Blog" />
+
+                <div
+                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
+                >
+                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
+                    >Leer mas</a
+                  >
+                </div>
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Musharof Chy</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <img src="images/icon-calender.svg" alt="Calender" />
+                    <p>25 Dec, 2025</p>
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="blog-single.html">Free advertising for your online business</a>
+                </h4>
+              </div>
+            </div>
+
+            <!-- Blog Item -->
+            <div class="animate_top sg vk rm xm">
+              <div class="c rc i z-1 pg">
+                <img class="w-full" src="images/blog-02.png" alt="Blog" />
+
+                <div
+                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
+                >
+                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
+                    >Leer mas</a
+                  >
+                </div>
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Musharof Chy</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <img src="images/icon-calender.svg" alt="Calender" />
+                    <p>25 Dec, 2025</p>
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="blog-single.html">9 simple ways to improve your design skills</a>
+                </h4>
+              </div>
+            </div>
+
+            <!-- Blog Item -->
+            <div class="animate_top sg vk rm xm">
+              <div class="c rc i z-1 pg">
+                <img class="w-full" src="images/blog-03.png" alt="Blog" />
+
+                <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
+                    <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">
+                        Leer mas
+                    </a>
+                </div>
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Musharof Chy</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <img src="images/icon-calender.svg" alt="Calender" />
+                    <p>25 Dec, 2025</p>
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Blog End ===== --> --}}
 
       <!-- ===== Contact Start ===== -->
       <section id="support" class="i pg fh rm ji gp uq">
@@ -759,7 +944,7 @@
 
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Contactemos`, sectionTitleText: `WiDi Group estaria encantada de contactar contigo para descubrir la mejor forma de ayudarte en el sector de soluciones tecnologicas.`}"
+          x-data="{ sectionTitle: `{{ __('Contactemos') }}`, sectionTitleText: `{{ __('Contactar encantado') }}`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -776,22 +961,22 @@
 
         <div class="i va bb ye ki xn wq jb mo">
           <div class="tc uf sn tf rn un zf xl:gap-10">
-            <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
+            <div class="animate_top mn/5 to/3 vk sg hh sm yh rq i pg">
               <!-- Bg Shapes -->
               <img src="images/shape-03.svg" alt="Shape" class="h la x wd" />
               <img src="images/shape-06.svg" alt="Shape" class="h la ma ne kf" />
 
               <div class="fb">
-                <h4 class="wj kk wm cc">Informacion</h4>
+                <h4 class="wj kk wm cc">{{ __('Informacion') }}</h4>
                 <p><a href="#">contact@widi.ar</a></p>
               </div>
               <div class="fb">
-                <h4 class="wj kk wm cc">Soporte</h4>
+                <h4 class="wj kk wm cc">{{ __('Soporte') }}</h4>
                 <p>support@widi.ar</p>
               </div>
               <div class="fb">
-                <h4 class="wj kk wm cc">Numero telefonico</h4>
-                <p><a href="#">+54 9 11 3433-5223</a></p>
+                <h4 class="wj kk wm cc">{{ __('Numero telefonico') }}</h4>
+                <p><a href="#">+54 9 11 2407-9549</a></p>
               </div>
               <div class="fb">
                 <h4 class="wj kk wm cc">‎ </h4>
@@ -801,7 +986,7 @@
               <span class="rc nd rh tm lc fb"></span>
 
               <div>
-                <h4 class="wj kk wm qb">Redes sociales</h4>
+                <h4 class="wj kk wm qb">{{ __('Redes sociales') }}</h4>
                 <ul class="tc wf fg">
                   <li>
                     <a href="#" class="c tc wf xf ie ld rg ml il tl">
@@ -835,10 +1020,10 @@
             </div>
 
             <div class="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
-              <form action="https://formbold.com/s/unique_form_id" method="POST">
+              <form action="javascript:void(0)" method="POST">
                 <div class="tc sf yo ap zf ep qb">
                   <div class="vd to/2">
-                    <label class="rc ac" for="fullname">Nombre completo*</label>
+                    <label class="rc ac" for="fullname">{{ __('Nombre completo') }}*</label>
                     <input
                       type="text"
                       name="fullname"
@@ -850,7 +1035,7 @@
                   </div>
 
                   <div class="vd to/2">
-                    <label class="rc ac" for="email">Direccion email*</label>
+                    <label class="rc ac" for="email">{{ __('Direccion email') }}*</label>
                     <input
                       type="email"
                       name="email"
@@ -864,7 +1049,7 @@
 
                 <div class="tc sf yo ap zf ep qb">
                   <div class="vd to/2">
-                    <label class="rc ac" for="phone">Telefono</label>
+                    <label class="rc ac" for="phone">{{ __('Telefono') }}</label>
                     <input
                       type="text"
                       name="phone"
@@ -875,12 +1060,12 @@
                   </div>
 
                   <div class="vd to/2">
-                    <label class="rc ac" for="subject">Asunto*</label>
+                    <label class="rc ac" for="subject">{{ __('Asunto') }}*</label>
                     <input
                       type="text"
                       for="subject"
                       id="subject"
-                      placeholder="Escribe un asunto"
+                      placeholder="{{ __('Asunto desc') }}"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                       required="required"
                     />
@@ -888,9 +1073,9 @@
                 </div>
 
                 <div class="fb">
-                  <label class="rc ac" for="message">Mensaje*</label>
+                  <label class="rc ac" for="message">{{ __('Mensaje') }}*</label>
                   <textarea
-                    placeholder="Mensaje"
+                    placeholder="{{ __('Mensaje') }}"
                     rows="4"
                     name="message"
                     id="message"
@@ -899,8 +1084,13 @@
                   ></textarea>
                 </div>
 
+                @foreach ($errors->all() as $error)
+                <script>contactpush('{{ $error }}')</script>
+                @endforeach
+                {!! HCaptcha::display() !!}
+
                 <div class="tc xf">
-                  <button class="vc rg lk gh ml il hi gi _l">Enviar mensaje</button>
+                  <button type="submit" class="vc rg lk gh ml il hi gi _l">{{ __('Enviar mensaje') }}</button>
                 </div>
               </form>
             </div>
@@ -918,15 +1108,15 @@
     <div class="tc uf sn tn un gg">
       <div class="animate_left to/2">
         <h2 class="fk vj zp pr lk ac">
-            Unete a la revolucion tecnologia con nuestro apoyo
+            {{ __('Unete a la revolucion') }}
         </h2>
         <p class="lk">
-            Cada año decenas de empresas actualizan sus sistemas al mundo tecnologico, pero no siempre de la forma mas segura y eficiente. Ahorra problemas futuros y disfruta de gigantes beneficios sin los problemas que acarrea lo nuevo
+            {{ __('Unete a la revolucion desc') }}
         </p>
       </div>
       <div class="animate_right bf">
-        <a href="#" class="vc ek kk hh rg ol il cm gi hi">
-            Contacta a WiDi
+        <a href="#support" class="vc ek kk hh rg ol il cm gi hi">
+            {{ __('Contacta a WiDi') }}
         </a>
       </div>
     </div>
@@ -947,7 +1137,7 @@
             <img src="images/WiDiDark.png" width="130px" alt="Logo" class="xc nm" />
           </a>
 
-          <p class="lc fb">Revolucion tecnologica de Latam al mundo.</p>
+          <p class="lc fb">{{ __('titulo') }}</p>
 
           <ul class="tc wf cg">
             <li>
@@ -1000,56 +1190,57 @@
 
         <div class="vd ro tc sf rn un gg vn">
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Nosotros</h4>
+            <h4 class="kk wm tj ec">{{ __('Nosotros') }}</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Equipo</a></li>
-              <li><a href="#" class="sc xl vb">Proyectos</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Equipo') }}</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Proyectos') }}</a></li>
               <li>
                 <a href="#" class="sc xl vb">
-                  Trabajo
-                  <span class="sc ek uj lk nh rg zi _i nc">Contratando!</span>
+                    {{ __('Trabajo') }}
+                  <span class="sc ek uj lk nh rg zi _i nc">{{ __('Contratando') }}</span>
                 </a>
               </li>
-              <li><a href="#" class="sc xl vb">Contacto</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Contacto') }}</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Servicios</h4>
+            <h4 class="kk wm tj ec">{{ __('Servicios') }}</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Desarrollo web apps</a></li>
-              <li><a href="#" class="sc xl vb">Diseño grafico</a></li>
-              <li><a href="#" class="sc xl vb">Sistemas informaticos</a></li>
-              <li><a href="#" class="sc xl vb">Experiencia de usuario</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Desarrollo web apps') }}</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Diseño grafico') }}</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Sistemas informaticos') }}</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Experiencia de usuario') }}</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Soporte</h4>
+            <h4 class="kk wm tj ec">{{ __('Soporte') }}</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Grupo</a></li>
-              <li><a href="#" class="sc xl vb">Media y comunicacion</a></li>
-              <li><a href="#" class="sc xl vb">Blog</a></li>
-              <li><a href="#" class="sc xl vb">Soporte tecnico</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Grupo') }}</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Media y comunicacion') }}</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Blog') }}</a></li>
+              <li><a href="#" class="sc xl vb">{{ __('Soporte tecnico') }}</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
             <h4 class="kk wm tj ec">Newsletter</h4>
-            <p class="ac qe">Suscribete a nuestro boletin de noticias</p>
+            <p class="ac qe">{{ __('boletin de noticias') }}</p>
 
-            <form action="https://formbold.com/s/unique_form_id" method="POST">
+            <form action="javascript:void(0)" method="POST">
               <div class="i">
                 <input
+                id="newsletter"
                   type="text"
-                  placeholder="Direccion e-mail"
+                  placeholder="{{ __('Direccion') }}"
                   class="vd sm _g ch pm vk xm rg gm dm dn gi mi"
                 />
 
-                <button class="h q fi">
+                <button onclick="newsletterfunct('{{csrf_token()}}')" class="h q fi">
                   <svg class="th vm ul" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_48_1487)">
                       <path
@@ -1076,9 +1267,32 @@
     <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
       <div class="animate_top">
         <ul class="tc wf gg">
-          <li><a href="#" class="xl"><span class='fi fi-es'></span></a></li>
-          <li><a href="#" class="xl">Politica de privacidad</a></li>
-          <li><a href="#" class="xl">Soporte</a></li>
+          <li>
+              <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+                  <!-- Dropdown toggle button -->
+                  <button @mouseover="open = true" class="flex bottom-0 items-center block p-2 rounded-md ">
+                      <span><span class='fi fi-{{ __('selected') }}'></span></span>
+                  </button>
+
+                  <div x-show="open"
+                  x-transition:enter.duration.500ms
+                  x-transition:leave.duration.800ms
+                  class="mt-2 -mr-1 w-32 bottom-0 origin-top-right absolute right-0 rounded-md shadow-xl">
+                      <a href="{{ __('second lang') }}"
+                          class="hover:text-white">
+                          <span class='fi fi-{{ __('second') }}'></span>
+                      </a>
+                      <a href="{{ __('third lang') }}"
+                          class="hover:text-white">
+                          <span class='fi fi-{{ __('third') }}'></span>
+                      </a>
+                </div>
+
+                  <!-- Dropdown menu -->
+              </div>
+          </li>
+          <li><a href="/policy" class="xl">{{ __('Politica de privacidad') }}</a></li>
+          <li><a href="/support" class="xl">{{ __('Soporte') }}</a></li>
         </ul>
       </div>
 
@@ -1144,4 +1358,5 @@
       };
     </script>
   <script defer src="bundle.js"></script></body>
+  {!! HCaptcha::script() !!}
 </html>

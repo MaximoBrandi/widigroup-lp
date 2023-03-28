@@ -1,0 +1,109 @@
+{
+    "lang": "es",
+
+    "selected":"es",
+    "second":"it",
+    "third":"gb",
+
+    "second lang":"/it",
+    "third lang":"/en",
+
+    "navigation":{
+        "Inicio":"Inicio",
+        "Proyectos":"Proyectos",
+        "Contacto":"Contactos"
+    },
+    "titulo": "Revolución tecnológica de Latam al mundo",
+    "descripcion": "Somos un grupo que se dedica a desarrollar soluciones de impacto para todas las industrias que todavía tienen mucho espacio para modernizarse, hacemos lo posible para ayudar a las personas y hacer que su experiencia de vida sea cada dia mejor.",
+    "Descubrenos":"Descubrenos",
+    "Escribe a":"Escribe a",
+    "Para una":"Para una experiencia mas cercana",
+    "contacto": {
+        "dinamico":"Soporte dinámico",
+        "soporte": "Ofrecemos diferentes formas de soporte para una mejor experiencia."
+    },
+    "experiencia": {
+        "descripcion": "Hazlo tu mismo",
+        "desarrollos_abiertos": "Todos nuestros desarrollos son abiertos, puedes hacerlos tuyos."
+    },
+    "facilidad":{
+        "tecnica":"Facilidad técnica",
+        "descripcion":"Nuestro enfoque en hacer trabajo intuitivo te beneficia."
+    },
+    "apoyo": {
+        "descripcion": "Apoyamos el futuro",
+        "juntos": "Juntos revolucionando la",
+        "seguridad": "Seguridad",
+        "widi_cams": "Mira como WiDicams ayuda a la seguridad de diversos entornos y a aliviar diferentes puestos de trabajo."
+    },
+    "trabajo": {
+        "descripcion": "MIRA NUESTRO TRABAJO",
+        "equipo": {
+            "titulo": "Conoce a nuestro equipo",
+            "descripcion":"Todos nosotros estamos motivados para dar al mundo las mas eficientes, amigables y versátiles soluciones libres."
+        }
+    },
+    "valores": {
+        "todos": "Siempre vamos a pensar en todos",
+        "codigo_abierto": "Nuestras soluciones son de código abierto, por lo que no solo todos pueden ayudar, también todos los proyectos son de libre uso.",
+        "hecho_para_todos": "Nuestros proyectos pueden ser utilizados tanto por grandes organizaciones como por individuos.",
+        "confiabilidad": "Intentamos en todo momento que nuestras soluciones sean altamente confiables y correctamente funcionales.",
+        "comunidad": "Somos parte de diferentes comunidades de desarrollo, por lo que no estas solo a la hora de aprovecharnos.",
+        "eficiencia": "Nos aseguramos de que nuestros aplicativos siempre funcionen en sistemas incluso de bajos recursos.",
+
+        "eficiencia titulo":"Eficiente optimización",
+        "comunidad titulo":"Vasta comunidad",
+        "hecho_para_todos titulo":"Hecho para todos",
+        "confiabilidad titulo":"Confiabilidad"
+    },
+    "Avanzada customizacion": "Avanzada customizacion",
+    "Avanzada customizacion desc": "Todos pueden hacer propios cada proyecto, aplicándolos según su habilidad a su ámbito de la mejor forma.",
+    "Continuas mejoras": "Continuas mejoras",
+    "Continuas mejoras desc": "Nunca dejamos proyectos, nos aseguramos de que su funcionamiento se cumpla y los mantenemos al dia.",
+    "Nuestras soluciones al mundo entero": "Nuestras soluciones al mundo entero",
+    "Nuestras soluciones al mundo entero desc": "Todos estos son nuestros proyectos actuales y finalizados, abiertos para que todos puedan darle utilidad.",
+    "Todos": "Todos",
+    "Aplicaciones web": "Aplicaciones web",
+    "Aplicaciones nativas": "Aplicaciones nativas",
+    "Sistemas": "Sistemas",
+    "Larn": "Educacion y conocimiento offline",
+    "Praendi": "Sistema de blog web3",
+    "WiDicams": "Reconocimiento facial con foco en la privacidad",
+    "Jildam": "Sistema de seguridad informática",
+    "Proyectos": "Proyectos",
+    "Consumidores": "Consumidores",
+    "Clientes potenciales": "Clientes potenciales",
+    "Paises objetivo": "Países objetivo",
+    "Contactemos": "Contactemos",
+    "Contactar encantado": "WiDi Group estaría encantada de contactar contigo para descubrir la mejor forma de ayudarte en el sector de soluciones tecnológicas",
+    "Informacion": "Información",
+    "Soporte": "Soporte",
+    "Numero telefonico": "Numero contacto",
+    "Redes sociales": "Redes sociales",
+    "Nombre completo": "Nombre completo",
+    "Direccion email": "Dirección email",
+    "Telefono": "Teléfono",
+    "Asunto": "Asunto",
+    "Asunto desc": "Escribe un asunto",
+    "Mensaje": "Mensaje",
+    "Enviar mensaje": "Enviar mensaje",
+    "Unete a la revolucion desc": "Cada año decenas de empresas actualizan sus sistemas al mundo tecnológico, pero no siempre de la forma mas segura y eficiente. Ahorra problemas futuros y disfruta de gigantes beneficios sin los problemas que acarrea lo nuevo",
+    "Contacta a WiDi":"Contacta a WiDi",
+    "Unete a la revolucion": "Únete a la revolución tecnología con nuestro apoyo",
+    "Nosotros": "Nosotros",
+    "Equipo": "Equipo",
+    "Trabajo": "Trabajo",
+    "Contratando": "Contratando!",
+    "Contacto": "Contacto",
+    "Servicios": "Servicios",
+    "Desarrollo web apps": "Desarrollo web apps",
+    "Diseño grafico": "Diseño gráfico",
+    "Sistemas informaticos": "Sistemas informáticos",
+    "Experiencia de usuario": "Experiencia de usuario",
+    "Grupo": "Grupo",
+    "Media y comunicación": "Media y comunicación",
+    "Soporte tecnico": "Soporte técnico",
+    "boletin de noticias": "Suscribete a nuestro boletín de noticias",
+    "Direccion":"Direccion e-mail",
+    "Politica de privacidad": "Política de privacidad"
+}

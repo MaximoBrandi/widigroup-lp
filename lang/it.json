@@ -1,0 +1,108 @@
+{
+    "lang": "it",
+
+    "selected":"it",
+    "second":"es",
+    "third":"gb",
+
+    "second lang":"/es",
+    "third lang":"/en",
+
+    "navigation":{
+    "Inicio":"Inicio",
+    "Proyectos":"Progetti",
+    "Contacto":"Contatti"
+    },
+    "titulo": "Rivoluzione tecnologica dell'America Latina al mondo",
+    "descripcion": "Siamo un gruppo che si dedica allo sviluppo di soluzioni di impatto per tutte le industrie che hanno ancora molto spazio per modernizzarsi, facciamo del nostro meglio per aiutare le persone e migliorare la loro esperienza di vita ogni giorno.",
+    "Descubrenos":"Scopri di più",
+    "Escribe a":"Scrivi a",
+    "Para una":"Per un'esperienza più vicina",
+    "contacto": {
+    "dinamico":"Supporto dinamico",
+    "soporte": "Offriamo diverse forme di supporto per un'esperienza migliore."
+    },
+    "experiencia": {
+    "descripcion": "Fallo da solo",
+    "desarrollos_abiertos": "Tutti i nostri sviluppi sono aperti, puoi farli tuoi."
+    },
+    "facilidad":{
+    "tecnica":"Facilità tecnica",
+    "descripcion":"Il nostro approccio al lavoro intuitivo ti beneficia."
+    },
+    "apoyo": {
+    "descripcion": "Supportiamo il futuro",
+    "juntos": "Insieme rivoluzionando la",
+    "seguridad": "Sicurezza",
+    "widi_cams": "Guarda come WiDicams aiuta la sicurezza di diversi ambienti e allevia diversi posti di lavoro."
+    },
+    "trabajo": {
+    "descripcion": "VEDI IL NOSTRO LAVORO",
+    "equipo": {
+    "titulo": "Incontra il nostro team",
+    "descripcion":"Siamo tutti motivati ​​per dare al mondo le soluzioni più efficienti, amichevoli e versatili possibili."
+    }
+    },
+    "valores": {
+    "todos": "Penseremo sempre a tutti",
+    "codigo_abierto": "Le nostre soluzioni sono open source, quindi non solo tutti possono aiutare, ma tutti i progetti sono di libero utilizzo.",
+    "hecho_para_todos": "I nostri progetti possono essere utilizzati sia da grandi organizzazioni che da singoli individui.",
+    "confiabilidad": "Cerchiamo sempre di fare in modo che le nostre soluzioni siano altamente affidabili e funzionali.",
+    "comunidad": "Facciamo parte di diverse comunità di sviluppo, quindi non sei solo quando ci approfitti.",
+    "eficiencia": "Ci assicuriamo che le nostre applicazioni funzionino sempre su sistemi anche a bassa risorsa.",
+    "eficiencia titulo":"Efficiente ottimizzazione",
+    "comunidad titulo":"Vasta comunità",
+    "hecho_para_todos titulo":"Fatto per tutti",
+    "confiabilidad titulo":"Affidabilità"
+    },
+    "Avanzada customizacion": "Customizzazione avanzata",
+"Avanzada customizacion desc": "Tutti possono personalizzare ogni progetto, applicandolo secondo le proprie capacità nel loro campo nel modo migliore.",
+"Continuas mejoras": "Miglioramenti continui",
+"Continuas mejoras desc": "Non abbandoniamo mai i progetti, ci assicuriamo che funzionino e li manteniamo sempre aggiornati.",
+"Nuestras soluciones al mundo entero": "Le nostre soluzioni per il mondo intero",
+"Nuestras soluciones al mundo entero desc": "Questi sono tutti i nostri progetti attuali e completati, aperti a tutti per essere utilizzati.",
+"Todos": "Tutti",
+"Aplicaciones web": "Applicazioni web",
+"Aplicaciones nativas": "Applicazioni native",
+"Sistemas": "Sistemi",
+"Larn": "Educazione e conoscenza offline",
+"Praendi": "Sistema di blog web3",
+"WiDicams": "Riconoscimento facciale con attenzione alla privacy",
+"Jildam": "Sistema di sicurezza informatica",
+"Proyectos": "Progetti",
+"Consumidores": "Consumatori",
+"Clientes potenciales": "Potenziali clienti",
+"Paises objetivo": "Paesi obiettivo",
+"Contactemos": "Contattaci",
+"Contactar encantado": "WiDi Group sarebbe felice di contattarti per scoprire il modo migliore per aiutarti nel settore delle soluzioni tecnologiche",
+"Informacion": "Informazioni",
+"Soporte": "Supporto",
+"Numero telefonico": "Numero di telefono",
+"Redes sociales": "Social network",
+"Nombre completo": "Nome completo",
+"Direccion email": "Indirizzo email",
+"Telefono": "Telefono",
+"Asunto": "Oggetto",
+"Asunto desc": "Scrivi un oggetto",
+"Mensaje": "Messaggio",
+"Enviar mensaje": "Invia messaggio",
+"Unete a la revolucion desc": "Ogni anno decine di aziende aggiornano i loro sistemi al mondo tecnologico, ma non sempre in modo sicuro ed efficiente. Risparmia problemi futuri e goditi enormi benefici senza i problemi che comporta la novità.",
+"Contacta a WiDi":"Contatta WiDi",
+"Unete a la revolucion": "Unisciti alla rivoluzione tecnologica con il nostro supporto",
+"Nosotros": "Noi",
+"Equipo": "Team",
+"Trabajo": "Lavoro",
+"Contratando": "Assunzioni!",
+"Contacto": "Contatto",
+"Servicios": "Servizi",
+"Desarrollo web apps": "Sviluppo di app web",
+"Diseño grafico": "Design grafico",
+"Sistemas informaticos": "Sistemi informatici",
+"Experiencia de usuario": "User experience",
+"Grupo": "Gruppo",
+"Media y comunicación": "Media e comunicazione",
+"Soporte tecnico": "Supporto tecnico",
+"boletin de noticias": "Iscriviti alla nostra newsletter",
+"Direccion":"Indirizzo email",
+"Politica de privacidad": "Politica sulla privacy"
+}

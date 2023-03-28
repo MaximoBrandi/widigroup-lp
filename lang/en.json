@@ -1,0 +1,108 @@
+{
+    "lang": "en",
+
+    "selected":"gb",
+    "second":"es",
+    "third":"it",
+
+    "second lang":"/es",
+    "third lang":"/it",
+
+    "navigation":{
+    "Inicio":"Home",
+    "Proyectos":"Projects",
+    "Contacto":"Contact"
+    },
+    "titulo": "Latin America's Technological Revolution to the World",
+    "descripcion": "We are a group dedicated to developing impactful solutions for all industries that still have plenty of room to modernize. We strive to help people and make their life experience better every day.",
+    "Descubrenos":"Discover us",
+    "Escribe a":"Write to",
+    "Para una":"For a closer communication",
+    "contacto": {
+    "dinamico":"Dynamic Support",
+    "soporte": "We offer different forms of support for a better experience."
+    },
+    "experiencia": {
+    "descripcion": "Do it yourself",
+    "desarrollos_abiertos": "All of our developments are open, you can make them your own."
+    },
+    "facilidad":{
+    "tecnica":"Technical Ease",
+    "descripcion":"Our focus on intuitive work benefits you."
+    },
+    "apoyo": {
+    "descripcion": "Supporting the Future",
+    "juntos": "Together revolutionizing",
+    "seguridad": "Security",
+    "widi_cams": "See how WiDicams helps with security in various environments and alleviates different job positions."
+    },
+    "trabajo": {
+    "descripcion": "CHECK OUT OUR WORK",
+    "equipo": {
+    "titulo": "Meet Our Team",
+    "descripcion":"We are all motivated to give the world the most efficient, user-friendly, and versatile free solutions."
+    }
+    },
+    "valores": {
+    "todos": "We always think of everyone",
+    "codigo_abierto": "Our solutions are open source, so not only can everyone help, but all projects are free to use.",
+    "hecho_para_todos": "Our projects can be used by both large organizations and individuals.",
+    "confiabilidad": "We strive to make our solutions highly reliable and properly functional at all times.",
+    "comunidad": "We are part of different development communities, so you are not alone when taking advantage of us.",
+    "eficiencia": "We ensure that our applications always work on even low-resource systems.",
+    "eficiencia titulo": "Efficient optimization",
+    "comunidad titulo": "Vast community",
+    "hecho_para_todos titulo": "Made for everyone",
+    "confiabilidad titulo": "Reliability"
+    },
+"Avanzada customizacion": "Advanced customization",
+"Avanzada customizacion desc": "Everyone can make each project their own, applying them according to their skill in their field in the best way.",
+"Continuas mejoras": "Continuous improvements",
+"Continuas mejoras desc": "We never abandon projects, we ensure that their functioning is fulfilled and we keep them up to date.",
+"Nuestras soluciones al mundo entero": "Our solutions to the whole world",
+"Nuestras soluciones al mundo entero desc": "All of these are our current and completed projects, open for everyone to use.",
+"Todos": "Everyone",
+"Aplicaciones web": "Web applications",
+"Aplicaciones nativas": "Native applications",
+"Sistemas": "Systems",
+"Larn": "Offline education and knowledge",
+"Praendi": "Web3 blog system",
+"WiDicams": "Facial recognition with a focus on privacy",
+"Jildam": "Computer security system",
+"Proyectos": "Projects",
+"Consumidores": "Consumers",
+"Clientes potenciales": "Potential customers",
+"Paises objetivo": "Target countries",
+"Contactemos": "Contact us",
+"Contactar encantado": "WiDi Group would be happy to contact you to discover the best way to help you in the technology solutions sector",
+"Informacion": "Information",
+"Soporte": "Support",
+"Numero telefonico": "Contact number",
+"Redes sociales": "Social media",
+"Nombre completo": "Full name",
+"Direccion email": "Email address",
+"Telefono": "Phone",
+"Asunto": "Subject",
+"Asunto desc": "Write a subject",
+"Mensaje": "Message",
+"Enviar mensaje": "Send message",
+"Unete a la revolucion desc": "Every year dozens of companies update their systems to the technological world, but not always in the most secure and efficient way. Save future problems and enjoy giant benefits without the problems that come with the new",
+"Contacta a WiDi": "Contact WiDi",
+"Unete a la revolucion": "Join the technology revolution with our support",
+"Nosotros": "About Us",
+"Equipo": "Team",
+"Trabajo": "Work",
+"Contratando": "Hiring!",
+"Contacto": "Contact",
+"Servicios": "Services",
+"Desarrollo web apps": "Web app development",
+"Diseño grafico": "Graphic design",
+"Sistemas informaticos": "Computer systems",
+"Experiencia de usuario": "User experience",
+"Grupo": "Group",
+"Media y comunicación": "Media and communication",
+"Soporte tecnico": "Technical support",
+"boletin de noticias": "Subscribe to our newsletter",
+"Direccion":"Email address",
+"Politica de privacidad": "Privacy policy"
+}

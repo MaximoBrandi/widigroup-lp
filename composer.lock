@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "121ea3a2fffe49b3ef9aa4d064b28c19",
+    "content-hash": "68cdb205bfbee1967c83eef446d8b863",
     "packages": [
         {
             "name": "brick/math",
@@ -5137,6 +5137,65 @@
                 }
             ],
             "time": "2023-02-24T10:42:00+00:00"
+        },
+        {
+            "name": "teampanfu/laravel-hcaptcha",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teampanfu/laravel-hcaptcha.git",
+                "reference": "32427da8b06ef1516dbf0ff1457ffb6df2f1a466"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teampanfu/laravel-hcaptcha/zipball/32427da8b06ef1516dbf0ff1457ffb6df2f1a466",
+                "reference": "32427da8b06ef1516dbf0ff1457ffb6df2f1a466",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2|^7.2",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Panfu\\Laravel\\HCaptcha\\HCaptchaServiceProvider"
+                    ],
+                    "aliases": {
+                        "HCaptcha": "Panfu\\Laravel\\HCaptcha\\Facades\\HCaptcha"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Panfu\\Laravel\\HCaptcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin",
+                    "email": "robin@panfu.us"
+                }
+            ],
+            "description": "A Laravel package to display and validate hCaptcha.",
+            "keywords": [
+                "captcha",
+                "hcaptcha",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/teampanfu/laravel-hcaptcha/issues",
+                "source": "https://github.com/teampanfu/laravel-hcaptcha/tree/v1.1.1"
+            },
+            "time": "2023-03-10T16:54:33+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
