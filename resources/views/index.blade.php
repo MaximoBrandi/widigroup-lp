@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WiDi group</title>
-    <meta name="keywords" content="escuela, técnica, ciudad, buenos, aires, orientación, automotores, computación, educacion, balvanera, informatica">
+    <meta name="keywords" content="{{ __('palabras clave')}}">
     <meta name="robots" content="follow">
     <meta name="title" content="WiDi Group">
     <meta name="copyright" content="WiDi Group">
     <meta name="author" content="WiDi Group">
-    <meta name="twitter:description" content="WiDi Group it's a technology consulting and open source developing group, where you can find a IT solution for every step of your production chain">
+    <meta name="twitter:description" content="{{ __('descripción pag')}}">
     <meta name="twitter:card" content="summary">
-    <meta property="og:image" content="images/WiDi.png">
-    <meta name="description" content="WiDi Group it's a technology consulting and open source developing group, where you can find a IT solution for every step of your production chain">
+    <meta property="og:image" content="images/WiDi-low.avif">
+    <meta name="description" content="{{ __('descripción pag')}}">
     <meta property="og:type" content="website">
-    <meta name="twitter:image" content="images/WiDi.png">
+    <meta name="twitter:image" content="images/WiDi-low.avif">
     <meta name="twitter:title" content="WiDi Group">
-    <link rel="icon" type="image/png" sizes="371x371" href="images/WiDiLogo.png">
+    <link rel="icon" type="image/avif" sizes="371x371" href="images/WiDiLogo.avif">
+    <link rel="icon" type="image/avif" sizes="120x120" href="images/WiDiLogo-low.avif">
 
     <link rel="stylesheet" href="notification.css"></link>
     <script src="notification.var.js"></script>
+    <script defer src="bundle.js"></script></body>
 
   <link rel="icon" href="favicon.ico">
   <link href="style.css" rel="stylesheet">
@@ -45,8 +47,8 @@
   <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
     <div class="vd to/4 tc wf yf">
       <a href="/">
-        <img class="om" src="images/WiDi.png" width="130px" alt="Logo Light" />
-        <img class="xc nm" src="images/WiDiDark.png" width="130px" alt="Logo Dark" />
+        <img class="om" src="images/WiDi-low.avif" width="130px" alt="Logo Light" />
+        <img class="xc nm" src="images/WiDiDark-low.avif" width="130px" alt="Logo Dark" />
       </a>
 
       <!-- Hamburger Toggle BTN -->
@@ -106,8 +108,8 @@
           <img src="images/shape-01.svg" alt="shape" class="xc 2xl:ud-block h t -ud-left-[10%] ua" />
           <img src="images/shape-02.svg" alt="shape" class="xc 2xl:ud-block h u p va" />
           <img src="images/shape-03.svg" alt="shape" class="xc 2xl:ud-block h v w va" />
-          <img src="images/shape-04.svg" alt="shape" class="h q r" />
-          <img src="images/banner-{{rand(1,5)}}.png" alt="shape" class="h q r" />
+          <img src="images/shape-04.svg" alt="shape" class="h q r om" />
+          <img src="images/banner-{{rand(1,5)}}.avif" alt="shape" class="h q r" />
         </div>
 
         <!-- Hero Content -->
@@ -184,12 +186,12 @@
             <div class="animate_left xc gn gg jn/2 i">
               <div>
                 <img src="images/shape-05.svg" alt="Shape" class="h -ud-left-5 x" />
-                <img src="images/about-01.png" alt="About" class="ib" />
-                <img src="images/about-02.png" alt="About" />
+                <img src="images/about-01.avif" alt="About" class="ib" />
+                <img src="images/about-02.avif" alt="About" />
               </div>
               <div>
                 <img src="images/shape-06.svg" alt="Shape" />
-                <img src="images/about-03.png" alt="About" class="ob gb" />
+                <img src="images/about-03.avif" alt="About" class="ob gb" />
                 <img src="images/shape-07.svg" alt="Shape" class="bb" />
               </div>
             </div>
@@ -205,7 +207,8 @@
                   <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
                   <img src="images/icon-play.svg" alt="Play" />
                 </span>
-                <span class="kk">{{ __('trabajo')['descripcion'] }}</span>
+                <span class="kk om">{{ __('trabajo')['descripcion'] }}</span>
+                <span style="color: gray" class="kk xc nm">{{ __('trabajo')['descripcion'] }}</span>
               </a>
             </div>
           </div>
@@ -244,8 +247,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
-                <img class="vd om" src="images/worker-1.png" alt="Team" />
-                <img class="vd xc nm" src="images/worker-1-dark.png" alt="Team" />
+                <img class="vd om" src="images/worker-1.avif" alt="Team" />
+                <img class="vd xc nm" src="images/worker-1-dark.avif" alt="Team" />
 
                 <div class="ef im nl il">
                   <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -284,8 +287,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
                 <div class="c i pg z-1">
-                  <img class="vd om" src="images/worker-4.jpeg" alt="Team" />
-                  <img class="vd xc nm" src="images/worker-4-dark.png" alt="Team" />
+                  <img class="vd om" src="images/worker-4.avif" alt="Team" />
+                  <img class="vd xc nm" src="images/worker-4-dark.avif" alt="Team" />
 
                   <div class="ef im nl il">
                     <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -325,8 +328,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
                 <div class="c i pg z-1">
-                  <img class="vd om" src="images/worker-5.jpeg" alt="Team" />
-                  <img class="vd xc nm" src="images/worker-5-dark.png" alt="Team" />
+                  <img class="vd om" src="images/worker-5.avif" alt="Team" />
+                  <img class="vd xc nm" src="images/worker-5-dark.avif" alt="Team" />
 
                   <div class="ef im nl il">
                     <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -365,8 +368,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
                 <div class="c i pg z-1">
-                  <img class="vd om" src="images/worker-3.jpeg" alt="Team" />
-                  <img class="vd xc nm" src="images/worker-3-dark.png" alt="Team" />
+                  <img class="vd om" src="images/worker-3.avif" alt="Team" />
+                  <img class="vd xc nm" src="images/worker-3-dark.avif" alt="Team" />
 
                   <div class="ef im nl il">
                     <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -401,8 +404,8 @@
             <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
-                <img class="vd om" src="images/worker-2.png" alt="Team" />
-                <img class="vd xc nm" src="images/worker-2-dark.png" alt="Team" />
+                <img class="vd om" src="images/worker-2.avif" alt="Team" />
+                <img class="vd xc nm" src="images/worker-2-dark.avif" alt="Team" />
 
                 <div class="ef im nl il">
                   <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -566,9 +569,9 @@
           <div class="projects-wrapper tc -ud-mx-5">
             <div class="project-sizer"></div>
             <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
+            <div class="project-item wi fb vd jn/2 to/3 branding digital ecommerce">
               <div class="c i pg sg z-1">
-                <img src="images/project-01.png" alt="Project" />
+                <img src="images/project-01.avif" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -588,9 +591,9 @@
             </div>
 
             <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 digital">
+            <div class="project-item wi fb vd jn/2 to/3 branding">
               <div class="c i pg sg z-1">
-                <img src="images/project-02.png" alt="Project" />
+                <img src="images/project-02.avif" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -610,9 +613,9 @@
             </div>
 
             <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
+            <div class="project-item wi fb vd jn/2 to/3 digital ecommerce">
               <div class="c i pg sg z-1">
-                <img src="images/project-04.png" alt="Project" />
+                <img src="images/project-04.avif" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -632,9 +635,9 @@
             </div>
 
             <!-- Project Item -->
-            <div class="project-item wi fb vd vo/3 digital ecommerce">
+            <div class="project-item wi fb vd vo/3 branding digital">
               <div class="c i pg sg z-1">
-                <img src="images/project-03.png" alt="Project" />
+                <img src="images/project-03.avif" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -656,86 +659,6 @@
         </div>
       </section>
       <!-- ===== Projects End ===== -->
-
-      {{-- <!-- ===== Testimonials Start ===== -->
-      <section class="hj rp hr">
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Experiencias`, sectionTitleText: `Experiencias y menciones que tuvimos para destacar, sobre la utilizacion y aplicacion de nuestras soluciones.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ze ki xn ar">
-          <div class="animate_top jb cq">
-            <!-- Slider main container -->
-            <div class="swiper testimonial-01">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="i hh rm sg vk xm bi qj">
-                    <!-- Border Shape -->
-                    <span class="rc je md/2 gh xg h q r"></span>
-                    <span class="rc je md/2 mh yg h q p"></span>
-
-                    <div class="tc sf rn tn un zf dp">
-                      <img class="bf" src="images/testimonial.png" alt="User" />
-
-                      <div>
-                        <img src="images/icon-quote.svg" alt="Quote" />
-                        <p class="ek ik xj _p kc fb">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.
-                        </p>
-
-                        <div class="tc yf vf">
-                          <div>
-                            <span class="rc ek xj kk wm zb">Devid Smith</span>
-                            <span class="rc">Founter @democompany</span>
-                          </div>
-
-                          <img class="rk" src="images/brand-light-02.svg" alt="Brand" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need navigation -->
-              <div class="tc wf xf fg jb">
-                <div
-                  class="swiper-button-prev c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym"
-                >
-                  <svg class="th lm" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.52366 7.83336L7.99366 12.3034L6.81533 13.4817L0.333663 7.00002L6.81533 0.518357L7.99366 1.69669L3.52366 6.16669L13.667 6.16669L13.667 7.83336L3.52366 7.83336Z"
-                      fill=""
-                    />
-                  </svg>
-                </div>
-                <div
-                  class="swiper-button-next c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym"
-                >
-                  <svg class="th lm" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" fill="" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Testimonials End ===== --> --}}
 
       <!-- ===== Counter Start ===== -->
       <section class="i pg qh rm ji hp">
@@ -767,171 +690,6 @@
       </section>
       <!-- ===== Counter End ===== -->
 
-      {{-- <!-- ===== Clients Start ===== -->
-      <section class="pj vp mr">
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
-          <div class="wc rf qn zf cp kq xf wf">
-            <a href="#" class="rc animate_top">
-              <img class="th wl ml il zl om" src="images/brand-light-01.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-02.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-02.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-03.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-03.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-04.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-04.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-05.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-05.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-06.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-06.svg" alt="Clients" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Clients End ===== --> --}}
-
-      {{-- <!-- ===== Blog Start ===== -->
-      <section class="ji gp uq">
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Ultimas actualizaciones y noticias`, sectionTitleText: `En nuestro blog vas a poder encotnrar las ultimas actualizaciones de nuestros proyectos al mismo tiempo que informacion de interes general sobre tecnologia.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ye ki xn vq jb jo">
-          <div class="wc qf pn xo zf iq">
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-01.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Leer mas</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Free advertising for your online business</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-02.png" alt="Blog" />
-
-                <div
-                  class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
-                >
-                  <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi"
-                    >Leer mas</a
-                  >
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">9 simple ways to improve your design skills</a>
-                </h4>
-              </div>
-            </div>
-
-            <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-              <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-03.png" alt="Blog" />
-
-                <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                    <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">
-                        Leer mas
-                    </a>
-                </div>
-              </div>
-
-              <div class="yh">
-                <div class="tc uf wf ag jq">
-                  <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
-                    <p>Musharof Chy</p>
-                  </div>
-                  <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
-                    <p>25 Dec, 2025</p>
-                  </div>
-                </div>
-                <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Blog End ===== --> --}}
 
       <!-- ===== Contact Start ===== -->
       <section id="support" class="i pg fh rm ji gp uq">
@@ -968,15 +726,15 @@
 
               <div class="fb">
                 <h4 class="wj kk wm cc">{{ __('Informacion') }}</h4>
-                <p><a href="#">contact@widi.ar</a></p>
+                <p><a href="mailto:contact@widi.ar">contact@widi.ar</a></p>
               </div>
               <div class="fb">
                 <h4 class="wj kk wm cc">{{ __('Soporte') }}</h4>
-                <p>support@widi.ar</p>
+                <p><a href="mailto:support@widi.ar">support@widi.ar</a></p>
               </div>
               <div class="fb">
                 <h4 class="wj kk wm cc">{{ __('Numero telefonico') }}</h4>
-                <p><a href="#">+54 9 11 2407-9549</a></p>
+                <p><a href="https://wa.me/5491124079549?text=Contact%20WiDi%20Group">+54 9 11 2407-9549</a></p>
               </div>
               <div class="fb">
                 <h4 class="wj kk wm cc">‎ </h4>
@@ -1020,13 +778,14 @@
             </div>
 
             <div class="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
-              <form action="javascript:void(0)" method="POST">
+              <form action="/contact" method="POST">
+                @csrf
                 <div class="tc sf yo ap zf ep qb">
                   <div class="vd to/2">
                     <label class="rc ac" for="fullname">{{ __('Nombre completo') }}*</label>
                     <input
                       type="text"
-                      name="fullname"
+                      name="name"
                       id="fullname"
                       placeholder="Devid Wonder"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
@@ -1065,6 +824,7 @@
                       type="text"
                       for="subject"
                       id="subject"
+                      name="subject"
                       placeholder="{{ __('Asunto desc') }}"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                       required="required"
@@ -1090,7 +850,8 @@
                 {!! HCaptcha::display() !!}
 
                 <div class="tc xf">
-                  <button type="submit" class="vc rg lk gh ml il hi gi _l">{{ __('Enviar mensaje') }}</button>
+                  <button style="color: grey" type="submit" class="vc rg lk gh ml il hi gi _l om">{{ __('Enviar mensaje') }}</button>
+                  <button type="submit" class="vc rg lk gh ml il hi gi _l xc nm">{{ __('Enviar mensaje') }}</button>
                 </div>
               </form>
             </div>
@@ -1133,8 +894,8 @@
       <div class="tc uf ap gg fp">
         <div class="animate_top zd/2 to/4">
           <a href="/">
-            <img src="images/WiDi.png" width="130px" alt="Logo" class="om" />
-            <img src="images/WiDiDark.png" width="130px" alt="Logo" class="xc nm" />
+            <img src="images/WiDi-low.avif" width="130px" alt="Logo" class="om" />
+            <img src="images/WiDiDark-low.avif" width="130px" alt="Logo" class="xc nm" />
           </a>
 
           <p class="lc fb">{{ __('titulo') }}</p>
@@ -1357,6 +1118,5 @@
         };
       };
     </script>
-  <script defer src="bundle.js"></script></body>
   {!! HCaptcha::script() !!}
 </html>

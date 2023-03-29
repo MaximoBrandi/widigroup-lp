@@ -1558,7 +1558,7 @@ async function newsletterfunct(token) {
     }
 }
 
-async function contactpush(data) {
+function contactpush(data) {
     if (data == 'success') {
         switch (document.documentElement.lang) {
             case 'es':
